@@ -1,0 +1,2114 @@
+/* =========================================
+   PALETA DE CORES - MOCCAÍ
+   ========================================= */
+
+:root {
+    --marrom-escuro: #4A2C20;
+    --marrom: #6F4532;
+    --marrom-claro: #8B5E3C;
+    --bege: #F3E5D0;
+    --creme: #FFF8EF;
+    --texto: #5C4033;
+    --borda: #D2B99B;
+}
+
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--creme);
+    color: var(--texto);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CABEÇALHO PRINCIPAL
+   ========================================= */
+
+.topo {
+    width: 100%;
+    min-height: 160px;
+
+    background-color: var(--marrom-escuro);
+    border-bottom: 5px solid var(--marrom-claro);
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px 30px;
+
+    position: relative;
+}
+
+
+/* LOGO */
+
+.topo .logo {
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+
+    border-radius: 18px;
+
+    border: 2px solid #A67C52;
+
+    background-color: #D8C5B4;
+
+    flex-shrink: 0;
+}
+
+
+/* TÍTULO */
+
+.topo h1 {
+    flex: 1;
+
+    margin: 0;
+    padding: 0 30px;
+
+    background: transparent;
+    border: none;
+
+    color: var(--bege);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    text-align: center;
+
+    font-weight: normal;
+}
+
+
+/* =========================================
+   MENU DA PÁGINA INICIAL
+   ========================================= */
+
+.botoes-menu {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 25px 15px;
+
+    background-color: var(--creme);
+
+    border-bottom: 1px solid var(--borda);
+}
+
+
+.botoes-menu .btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 50px;
+
+    padding: 0;
+
+    background-color: var(--marrom);
+
+    color: white;
+
+    border: 2px solid var(--marrom);
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botoes-menu .btn:hover {
+    background-color: var(--bege);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   CABEÇALHO DO CARDÁPIO
+   ========================================= */
+
+.cabecalho-cardapio {
+    width: 100%;
+}
+
+
+.topo-marrom {
+    width: 100%;
+
+    height: 160px;
+
+    background-color: var(--marrom-escuro);
+
+    border-bottom: 5px solid var(--marrom-claro);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+.logo-cardapio {
+    position: absolute;
+
+    left: 30px;
+    top: 20px;
+
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+
+    border-radius: 18px;
+
+    border: 2px solid #A67C52;
+
+    background-color: #D8C5B4;
+}
+
+
+.topo-marrom h1 {
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    border: none;
+
+    color: var(--bege);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MENU DO CARDÁPIO
+   ========================================= */
+
+.menu-cardapio {
+    width: 100%;
+
+    min-height: 95px;
+
+    padding: 20px 15px;
+
+    background-color: var(--creme);
+
+    border-bottom: 1px solid var(--borda);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+}
+
+
+.menu-cardapio .botao-menu,
+.menu-cardapio .btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 50px;
+
+    padding: 0;
+
+    background-color: var(--marrom);
+
+    color: white;
+
+    border: 2px solid var(--marrom);
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.menu-cardapio .botao-menu:hover,
+.menu-cardapio .btn:hover {
+    background-color: var(--bege);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   CONTEÚDO DA PÁGINA INICIAL
+   ========================================= */
+
+header:not(.topo):not(.cabecalho-cardapio):not(.topo-cardapio) {
+    background-color: var(--bege);
+
+    padding: 45px 12%;
+
+    text-align: center;
+
+    border-top: 1px solid var(--borda);
+
+    border-bottom: 1px solid var(--borda);
+}
+
+
+header h2 {
+    color: var(--marrom-escuro);
+
+    font-size: 28px;
+
+    margin: 25px 0 12px;
+}
+
+
+header h2:first-child {
+    margin-top: 0;
+}
+
+
+header p {
+    max-width: 850px;
+
+    margin: 0 auto 25px;
+
+    font-size: 17px;
+
+    color: var(--texto);
+}
+
+
+/* =========================================
+   ÁREA PRINCIPAL
+   ========================================= */
+
+main {
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.container-cards {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+
+.container-cards .card {
+    width: 300px;
+
+    background-color: var(--creme);
+
+    border: 1px solid #C5A582;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 12px rgba(74, 44, 32, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.container-cards .card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 8px 20px rgba(74, 44, 32, 0.25);
+}
+
+
+.container-cards .card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.card-conteudo {
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.card-conteudo h3 {
+    color: var(--marrom-escuro);
+
+    font-size: 22px;
+
+    margin: 0 0 12px;
+}
+
+
+.card-conteudo p {
+    color: #6B5145;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   PREÇO
+   ========================================= */
+
+.preco {
+    display: inline-block;
+
+    color: var(--creme);
+
+    background-color: var(--marrom-escuro);
+
+    padding: 10px 22px;
+
+    border-radius: 20px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TÍTULO DO CARDÁPIO
+   ========================================= */
+
+.cardapio {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 60px auto;
+}
+
+
+.titulo-cardapio {
+    text-align: center;
+
+    color: var(--marrom-escuro);
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   CARDS ANTIGOS
+   ========================================= */
+
+.cards-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+
+.cards-container .card {
+    width: 320px;
+
+    background-color: var(--bege);
+
+    border: 1px solid #C5A582;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 6px 18px rgba(74, 44, 32, 0.15);
+}
+
+
+.card-img-top {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.card-body {
+    padding: 22px;
+
+    text-align: center;
+}
+
+
+.card-title {
+    color: var(--marrom-escuro);
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+
+.card-text {
+    color: var(--texto);
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   BOTÃO DOS CARDS
+   ========================================= */
+
+.card .btn-primary {
+    display: inline-block;
+
+    background-color: var(--marrom);
+
+    color: var(--creme);
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.card .btn-primary:hover {
+    background-color: var(--marrom-escuro);
+
+    transform: scale(1.03);
+}
+
+
+/* ==========================================
+   PÁGINA INICIAL
+   ========================================== */
+
+.inicio-conteudo {
+    width: 100%;
+
+    padding: 35px 25px 60px;
+
+    background-color: var(--creme);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+.inicio-card {
+    width: 100%;
+
+    max-width: 1200px;
+
+    background-color: var(--creme);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+
+.inicio-imagem {
+    display: block;
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+.inicio-card-conteudo {
+    padding: 20px 25px 10px;
+}
+
+
+.inicio-card-conteudo h2 {
+    color: var(--marrom-escuro);
+
+    font-size: 25px;
+
+    margin: 0 0 12px;
+}
+
+
+.inicio-card-conteudo p {
+    max-width: 1000px;
+
+    margin: 0 auto 20px;
+
+    color: var(--texto);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+.inicio-btn {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background-color: var(--marrom);
+
+    color: var(--creme);
+
+    border: 2px solid var(--marrom);
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.inicio-btn:hover {
+    background-color: var(--bege);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-3px);
+}
+
+
+.reserva-destaque {
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   PÁGINA DE PEDIDOS
+   ========================================================= */
+
+
+/* CABEÇALHO DO PEDIDO */
+
+.topo-cardapio {
+    width: 100%;
+
+    height: 160px;
+
+    background-color: var(--marrom-escuro);
+
+    border-bottom: 5px solid var(--marrom-claro);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    padding: 0;
+}
+
+
+.topo-cardapio .logo-cardapio {
+    position: absolute;
+
+    left: 30px;
+    top: 20px;
+
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+
+    border-radius: 18px;
+
+    border: 2px solid #A67C52;
+
+    background-color: #D8C5B4;
+}
+
+
+.topo-cardapio > div {
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.topo-cardapio h1 {
+    margin: 0;
+
+    color: var(--bege);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+}
+
+
+.topo-cardapio p {
+    margin: 8px 0 0;
+
+    color: var(--bege);
+
+    font-size: 16px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MENU DA PÁGINA DE PEDIDO
+   ========================================= */
+
+.botoes-cardapio {
+    width: 100%;
+
+    height: 95px;
+
+    background-color: var(--creme);
+
+    border-bottom: 1px solid var(--borda);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 20px 15px;
+}
+
+
+.btn-cardapio {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 130px;
+
+    height: 50px;
+
+    background-color: var(--marrom);
+
+    color: white;
+
+    border: 2px solid var(--marrom);
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+
+.btn-cardapio:hover {
+    background-color: var(--bege);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   CONTEÚDO DO PEDIDO
+   ========================================= */
+
+.pagina-pedido {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: var(--creme);
+
+    padding: 50px 7% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.introducao-pedido {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.introducao-pedido h2 {
+    color: var(--marrom-escuro);
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.introducao-pedido p {
+    color: var(--texto);
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   PRODUTOS
+   ========================================= */
+
+.produtos-pedido {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.produto-pedido {
+    width: 100%;
+
+    min-height: 250px;
+
+    background-color: var(--creme);
+
+    border: 1px solid #C49A6C;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    box-shadow:
+        0 5px 12px rgba(74, 44, 32, 0.13);
+
+    transition: 0.3s;
+}
+
+
+.produto-pedido:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(74, 44, 32, 0.18);
+}
+
+
+/* IMAGEM DO PRODUTO */
+
+.produto-pedido img {
+    width: 50%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* INFORMAÇÕES */
+
+.produto-info {
+    width: 50%;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.produto-info h3 {
+    margin: 0 0 12px;
+
+    color: var(--marrom-escuro);
+
+    font-size: 22px;
+}
+
+
+.produto-info p {
+    margin: 0 0 14px;
+
+    color: var(--texto);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* PREÇO */
+
+.produto-preco {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--marrom);
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BOTÃO ADICIONAR
+   ========================================= */
+
+.botao-adicionar {
+    border: none;
+
+    padding: 11px 25px;
+
+    background-color: var(--marrom-escuro);
+
+    color: white;
+
+    border-radius: 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botao-adicionar:hover {
+    background-color: var(--marrom);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CARRINHO
+   ========================================= */
+
+.carrinho-pedido {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 30px auto 50px;
+
+    padding: 30px;
+
+    background-color: var(--bege);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 12px rgba(74, 44, 32, 0.13);
+}
+
+
+.carrinho-pedido h2 {
+    margin: 0 0 25px;
+
+    color: var(--marrom-escuro);
+
+    font-size: 28px;
+
+    text-align: center;
+}
+
+
+/* MENSAGEM CARRINHO VAZIO */
+
+.carrinho-pedido #carrinho > p {
+    margin: 0;
+
+    padding: 20px;
+
+    background-color: var(--creme);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 8px;
+
+    color: var(--texto);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   ITEM DO CARRINHO
+   ========================================= */
+
+.carrinho-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+
+    padding: 18px;
+
+    background-color: var(--creme);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+.carrinho-item strong {
+    color: var(--marrom-escuro);
+
+    font-size: 18px;
+}
+
+
+.carrinho-item p {
+    margin: 0;
+
+    color: var(--texto);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   BOTÕES DO CARRINHO
+   ========================================= */
+
+.carrinho-item button {
+    padding: 7px 12px;
+
+    background-color: var(--marrom);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.carrinho-item button:hover {
+    background-color: var(--marrom-escuro);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TOTAL
+   ========================================= */
+
+.carrinho-total {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 2px solid var(--borda);
+
+    color: var(--marrom-escuro);
+
+    font-size: 20px;
+}
+
+
+.carrinho-total strong {
+    font-size: 23px;
+}
+
+
+/* =========================================
+   DADOS DO CLIENTE
+   ========================================= */
+
+.dados-pedido {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    background-color: var(--creme);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 12px rgba(74, 44, 32, 0.10);
+
+    text-align: left;
+}
+
+
+.dados-pedido h2 {
+    margin-bottom: 8px;
+
+    color: var(--marrom-escuro);
+
+    font-size: 28px;
+
+    text-align: center;
+}
+
+
+.dados-pedido > p {
+    margin-bottom: 25px;
+
+    color: var(--texto);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CAMPOS
+   ========================================= */
+
+.campo-pedido {
+    margin-bottom: 20px;
+}
+
+
+.campo-pedido label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--marrom-escuro);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.campo-pedido input,
+.campo-pedido textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background-color: white;
+
+    color: var(--texto);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.campo-pedido input:focus,
+.campo-pedido textarea:focus {
+    border-color: var(--marrom);
+
+    box-shadow:
+        0 0 0 2px rgba(111, 69, 50, 0.12);
+}
+
+
+.campo-pedido textarea {
+    resize: vertical;
+}
+
+
+/* =========================================
+   BOTÃO FINALIZAR
+   ========================================= */
+
+.botao-finalizar {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    background-color: var(--marrom-escuro);
+
+    color: white;
+
+    border: 2px solid var(--marrom-escuro);
+
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botao-finalizar:hover {
+    background-color: var(--bege);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+
+footer {
+    background-color: var(--marrom-escuro);
+
+    color: var(--bege);
+
+    text-align: center;
+
+    padding: 22px 15px;
+
+    font-size: 14px;
+
+    border-top: 4px solid var(--marrom-claro);
+}
+
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .produtos-pedido {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    /* CABEÇALHO */
+
+    .topo {
+        min-height: 120px;
+
+        padding: 15px;
+    }
+
+
+    .topo .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .topo h1 {
+        font-size: 21px;
+
+        padding: 0 5px;
+    }
+
+
+    /* CABEÇALHO PEDIDO */
+
+    .topo-cardapio {
+        height: 130px;
+
+        min-height: 130px;
+    }
+
+
+    .topo-cardapio .logo-cardapio {
+        left: 15px;
+
+        top: 18px;
+
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .topo-cardapio h1 {
+        font-size: 23px;
+
+        margin-left: 90px;
+    }
+
+
+    .topo-cardapio p {
+        font-size: 13px;
+
+        margin-left: 90px;
+    }
+
+
+    /* MENUS */
+
+    .botoes-menu,
+    .menu-cardapio,
+    .botoes-cardapio {
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        padding: 18px 10px;
+    }
+
+
+    .botoes-menu .btn,
+    .menu-cardapio .botao-menu,
+    .menu-cardapio .btn,
+    .btn-cardapio {
+        width: 105px;
+
+        min-width: 105px;
+
+        height: 45px;
+
+        font-size: 12px;
+    }
+
+
+    /* PÁGINA DE PEDIDO */
+
+    .pagina-pedido {
+        padding: 35px 5% 60px;
+    }
+
+
+    .introducao-pedido h2 {
+        font-size: 27px;
+    }
+
+
+    /* PRODUTOS */
+
+    .produto-pedido {
+        flex-direction: column;
+    }
+
+
+    .produto-pedido img {
+        width: 100%;
+
+        height: 220px;
+    }
+
+
+    .produto-info {
+        width: 100%;
+
+        min-height: 220px;
+
+        padding: 20px;
+    }
+
+
+    .botao-adicionar {
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+
+    /* CARRINHO */
+
+    .carrinho-pedido {
+        padding: 20px 15px;
+    }
+
+
+    .carrinho-item {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .carrinho-item button {
+        padding: 8px 12px;
+    }
+
+
+    .carrinho-total {
+        font-size: 18px;
+    }
+
+
+    .carrinho-total strong {
+        font-size: 20px;
+    }
+
+
+    /* DADOS */
+
+    .dados-pedido {
+        padding: 20px 15px;
+    }
+
+
+    /* INÍCIO */
+
+    .inicio-conteudo {
+        padding: 25px 15px 40px;
+
+        gap: 30px;
+    }
+
+
+    .inicio-imagem {
+        height: 180px;
+    }
+
+
+    .inicio-card-conteudo {
+        padding: 18px 15px;
+    }
+
+
+    .inicio-card-conteudo h2 {
+        font-size: 22px;
+    }
+
+
+    .inicio-card-conteudo p {
+        font-size: 15px;
+    }
+
+}/* =========================================
+   ENTREGA OU RETIRADA
+   ========================================= */
+
+.entrega-pedido {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background-color: var(--bege);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 12px rgba(74, 44, 32, 0.10);
+}
+
+
+.entrega-pedido h2 {
+    margin-bottom: 25px;
+
+    color: var(--marrom-escuro);
+
+    font-size: 28px;
+
+    text-align: center;
+}
+
+
+/* OPÇÕES */
+
+.opcoes-entrega {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+}
+
+
+.opcoes-entrega label {
+    padding: 15px 25px;
+
+    background-color: var(--creme);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 8px;
+
+    color: var(--marrom-escuro);
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.opcoes-entrega input {
+    margin-right: 8px;
+
+    accent-color: var(--marrom);
+}
+
+
+/* ENDEREÇO */
+
+.campo-endereco {
+    display: none;
+
+    margin-top: 20px;
+}
+
+
+.campo-endereco label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--marrom-escuro);
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+}
+
+
+.campo-endereco input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+
+/* TAXA */
+
+.taxa-entrega {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--borda);
+
+    color: var(--marrom-escuro);
+
+    font-size: 18px;
+}
+
+
+.taxa-entrega strong {
+    font-size: 20px;
+}
+/* =========================================
+   PÁGINA DE RESERVA
+   ========================================= */
+
+.pagina-reserva {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: var(--creme);
+
+    padding: 50px 7% 80px;
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao-reserva {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.introducao-reserva h2 {
+    color: var(--marrom-escuro);
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.introducao-reserva p {
+    color: var(--texto);
+
+    font-size: 16px;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario-reserva {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background-color: var(--bege);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 12px rgba(74, 44, 32, 0.13);
+}
+
+
+.formulario-reserva h2 {
+    color: var(--marrom-escuro);
+
+    font-size: 28px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* CAMPOS */
+
+.campo-reserva {
+    margin-bottom: 22px;
+}
+
+
+.campo-reserva label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--marrom-escuro);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.campo-reserva input,
+.campo-reserva select,
+.campo-reserva textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background-color: white;
+
+    color: var(--texto);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.campo-reserva input:focus,
+.campo-reserva select:focus,
+.campo-reserva textarea:focus {
+    border-color: var(--marrom);
+
+    box-shadow:
+        0 0 0 2px rgba(111, 69, 50, 0.12);
+}
+
+
+.campo-reserva textarea {
+    resize: vertical;
+}
+
+
+/* BOTÃO */
+
+.botao-reserva {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    background-color: var(--marrom-escuro);
+
+    color: white;
+
+    border: 2px solid var(--marrom-escuro);
+
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botao-reserva:hover {
+    background-color: var(--bege);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-2px);
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes-reserva {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 40px auto 0;
+
+    padding: 30px;
+
+    background-color: var(--creme);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+
+.informacoes-reserva h2 {
+    color: var(--marrom-escuro);
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.informacoes-reserva p {
+    color: var(--texto);
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .pagina-reserva {
+        padding: 35px 5% 60px;
+    }
+
+
+    .introducao-reserva h2 {
+        font-size: 27px;
+    }
+
+
+    .formulario-reserva {
+        padding: 20px 15px;
+    }
+
+
+    .formulario-reserva h2 {
+        font-size: 24px;
+    }
+
+
+    .informacoes-reserva {
+        padding: 20px 15px;
+    }
+
+}
+/* =========================================
+   NOVO CARDÁPIO
+   ========================================= */
+
+.pagina-cardapio {
+    width: 100%;
+    padding: 50px 6% 80px;
+    background-color: var(--creme);
+}
+
+
+/* CATEGORIA */
+
+.categoria-cardapio {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 65px;
+}
+
+
+.categoria-cardapio h2 {
+    color: var(--marrom-escuro);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--borda);
+}
+
+
+/* CARDS */
+
+.cards-cardapio {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.card-cardapio {
+    background-color: white;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(74, 44, 32, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.card-cardapio:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 9px 22px rgba(74, 44, 32, 0.20);
+}
+
+
+/* IMAGEM */
+
+.card-cardapio img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo-cardapio {
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.conteudo-cardapio h3 {
+    color: var(--marrom-escuro);
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.conteudo-cardapio p {
+    color: var(--texto);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    min-height: 72px;
+
+    margin-bottom: 15px;
+}
+
+
+/* PREÇO */
+
+.preco-cardapio {
+    display: inline-block;
+
+    background-color: var(--marrom-escuro);
+
+    color: var(--creme);
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVO
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .cards-cardapio {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-cardapio {
+        padding: 35px 15px 50px;
+    }
+
+
+    .categoria-cardapio {
+        margin-bottom: 45px;
+    }
+
+
+    .categoria-cardapio h2 {
+        font-size: 25px;
+    }
+
+
+    .cards-cardapio {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card-cardapio img {
+        height: 240px;
+    }
+
+}

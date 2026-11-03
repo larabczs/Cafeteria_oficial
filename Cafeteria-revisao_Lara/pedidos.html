@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faça seu pedido | Moccaí</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+    <header class="topo-cardapio">
+
+        <img src="./img/logo.png"
+             alt="Logo da Cafeteria Moccaí"
+             class="logo-cardapio">
+
+        <div>
+
+            <h1>Faça seu pedido ☕</h1>
+
+        
+
+        </div>
+
+    </header>
+
+
+    <!-- MENU -->
+   <nav class="botoes-cardapio">
+
+    <a href="index.html" class="btn-cardapio">
+        INÍCIO
+    </a>
+
+    <a href="cardapio.html" class="btn-cardapio">
+        CARDÁPIO
+    </a>
+
+    <a href="reserva.html" class="btn-cardapio">
+        RESERVA
+    </a>
+
+</nav>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="pagina-pedido">
+
+
+        <!-- INTRODUÇÃO -->
+        <div class="introducao-pedido">
+
+            <h2>Monte seu pedido</h2>
+
+            <p>
+                Escolha os produtos que deseja e informe a quantidade.
+                Depois, preencha seus dados para finalizar.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUTOS -->
+        <section class="produtos-pedido">
+
+
+            <!-- CAFÉ ESPECIAL -->
+            <div class="produto-pedido">
+
+                <img src="./img/cafe.jpg"
+                     alt="Café Especial">
+
+                <div class="produto-info">
+
+                    <h3>Café Especial</h3>
+
+                    <p>
+                        Um café delicioso e aromático,
+                        perfeito para qualquer momento do dia.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 8,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Café Especial', 8)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOCHA -->
+            <div class="produto-pedido">
+
+                <img src="./img/Mocha.jpg"
+                     alt="Mocha">
+
+                <div class="produto-info">
+
+                    <h3>Mocha</h3>
+
+                    <p>
+                        A combinação irresistível de café,
+                        leite cremoso e chocolate.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 12,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Mocha', 12)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TORTA DE CHOCOLATE -->
+            <div class="produto-pedido">
+
+                <img src="./img/bolo.jpg"
+                     alt="Torta de Chocolate">
+
+                <div class="produto-info">
+
+                    <h3>Torta de Chocolate</h3>
+
+                    <p>
+                        Uma torta rica e saborosa,
+                        ideal para acompanhar seu café.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 10,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Torta de Chocolate', 10)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAPPUCCINO -->
+            <div class="produto-pedido">
+
+                <img src="./img/cappucino.jpg"
+                     alt="Cappuccino">
+
+                <div class="produto-info">
+
+                    <h3>Cappuccino</h3>
+
+                    <p>
+                        Café cremoso com leite vaporizado
+                        e um toque especial de canela.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 10,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Cappuccino', 10)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAFÉ LATTE -->
+            <div class="produto-pedido">
+
+                <img src="./img/latte.jpg"
+                     alt="Café Latte">
+
+                <div class="produto-info">
+
+                    <h3>Café Latte</h3>
+
+                    <p>
+                        Uma deliciosa mistura de café
+                        espresso com leite cremoso.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 11,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Café Latte', 11)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRAPPUCCINO -->
+            <div class="produto-pedido">
+
+                <img src="./img/frappucino.jpg"
+                     alt="Frappuccino">
+
+                <div class="produto-info">
+
+                    <h3>Frappuccino</h3>
+
+                    <p>
+                        Bebida gelada de café,
+                        cremosa e perfeita para dias quentes.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 14,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Frappuccino', 14)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- BROWNIE -->
+            <div class="produto-pedido">
+
+                <img src="./img/brownie.jpg"
+                     alt="Brownie de Chocolate">
+
+                <div class="produto-info">
+
+                    <h3>Brownie de Chocolate</h3>
+
+                    <p>
+                        Brownie macio por dentro,
+                        com muito sabor de chocolate.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 9,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Brownie de Chocolate', 9)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHEESECAKE -->
+            <div class="produto-pedido">
+
+                <img src="./img/cheesecake.jpg"
+                     alt="Cheesecake">
+
+                <div class="produto-info">
+
+                    <h3>Cheesecake</h3>
+
+                    <p>
+                        Sobremesa cremosa com uma
+                        deliciosa cobertura de frutas.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 13,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Cheesecake', 13)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CROISSANT -->
+            <div class="produto-pedido">
+
+                <img src="./img/croissant.jpg"
+                     alt="Croissant">
+
+                <div class="produto-info">
+
+                    <h3>Croissant</h3>
+
+                    <p>
+                        Massa folhada leve e crocante,
+                        perfeita para acompanhar seu café.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 8,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Croissant', 8)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MILKSHAKE -->
+            <div class="produto-pedido">
+
+                <img src="./img/milkshake.jpg"
+                     alt="Milkshake de Chocolate">
+
+                <div class="produto-info">
+
+                    <h3>Milkshake de Chocolate</h3>
+
+                    <p>
+                        Milkshake gelado e cremoso,
+                        feito para os apaixonados por chocolate.
+                    </p>
+
+                    <span class="produto-preco">
+                        R$ 15,00
+                    </span>
+
+                    <button type="button"
+                            class="botao-adicionar"
+                            onclick="adicionar('Milkshake de Chocolate', 15)">
+
+                        ADICIONAR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- CARRINHO -->
+        <section class="carrinho-pedido">
+
+            <h2>Seu carrinho ☕</h2>
+
+            <div id="carrinho">
+
+                <p>
+                    Seu carrinho está vazio.
+                </p>
+
+            </div>
+
+
+            <div class="carrinho-total">
+
+                <span>Total:</span>
+
+                <strong>
+                    R$ <span id="total">0,00</span>
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- DADOS DO CLIENTE -->
+        <section class="dados-pedido">
+
+            <h2>Seus dados</h2>
+
+            <p>
+                Preencha seus dados para identificarmos seu pedido.
+            </p>
+
+
+            <!-- NOME -->
+            <div class="campo-pedido">
+
+                <label for="nome">
+                    Nome:
+                </label>
+
+                <input type="text"
+                       id="nome"
+                       name="nome"
+                       placeholder="Digite seu nome"
+                       required>
+
+            </div>
+            
+
+
+            <!-- TELEFONE -->
+            <div class="campo-pedido">
+
+                <label for="telefone">
+                    Telefone:
+                </label>
+
+                <input type="tel"
+                       id="telefone"
+                       name="telefone"
+                       placeholder="(00) 00000-0000"
+                       required>
+
+            </div>
+
+            <!-- ENTREGA OU RETIRADA -->
+<section class="entrega-pedido">
+
+    <h2>Como você deseja receber?</h2>
+
+    <div class="opcoes-entrega">
+
+        <label>
+            <input type="radio"
+                   name="tipoEntrega"
+                   value="retirada"
+                   onclick="escolherEntrega()">
+            🏠 Retirada na cafeteria
+        </label>
+
+        <label>
+            <input type="radio"
+                   name="tipoEntrega"
+                   value="entrega"
+                   onclick="escolherEntrega()">
+            🛵 Entrega
+        </label>
+
+    </div>
+
+    <div id="campo-endereco" class="campo-endereco">
+
+        <label for="endereco">Endereço para entrega:</label>
+
+        <input type="text"
+               id="endereco"
+               placeholder="Rua, número, bairro">
+
+    </div>
+
+    <div class="taxa-entrega">
+
+        <span>Taxa de entrega:</span>
+
+        <strong>
+            R$ <span id="taxa">0,00</span>
+        </strong>
+
+    </div>
+
+</section>
+
+            <!-- OBSERVAÇÕES -->
+            <div class="campo-pedido">
+
+                <label for="observacoes">
+                    Observações:
+                </label>
+
+                <textarea id="observacoes"
+                          name="observacoes"
+                          rows="4"
+                          placeholder="Alguma observação sobre seu pedido?"></textarea>
+
+            </div>
+
+
+            <!-- FINALIZAR -->
+            <button type="button"
+                    class="botao-finalizar"
+                    onclick="finalizarPedido()">
+
+                FINALIZAR PEDIDO
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            © 2026 Cafeteria Moccaí. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+
+    <script>
+
+    let produtos = [];
+    let quantidades = [];
+    let precos = [];
+
+    let taxaEntrega = 0;
+
+
+    /* =========================================
+       ADICIONAR PRODUTO
+       ========================================= */
+
+    function adicionar(nome, preco) {
+
+        let posicao = produtos.indexOf(nome);
+
+        if (posicao == -1) {
+
+            produtos.push(nome);
+            quantidades.push(1);
+            precos.push(preco);
+
+        } else {
+
+            quantidades[posicao]++;
+
+        }
+
+        mostrarCarrinho();
+    }
+
+
+    /* =========================================
+       MOSTRAR CARRINHO
+       ========================================= */
+
+    function mostrarCarrinho() {
+
+        let carrinho =
+            document.getElementById("carrinho");
+
+        let total = 0;
+
+        carrinho.innerHTML = "";
+
+
+        if (produtos.length == 0) {
+
+            carrinho.innerHTML =
+                "<p>Seu carrinho está vazio.</p>";
+        }
+
+
+        for (let i = 0; i < produtos.length; i++) {
+
+            let subtotal =
+                precos[i] * quantidades[i];
+
+            total = total + subtotal;
+
+
+            carrinho.innerHTML +=
+
+                "<div class='carrinho-item'>" +
+
+                    "<strong>" +
+                    produtos[i] +
+                    "</strong>" +
+
+                    "<p>" +
+                    "Quantidade: " +
+                    quantidades[i] +
+                    "</p>" +
+
+                    "<p>" +
+                    "Subtotal: R$ " +
+                    subtotal.toFixed(2).replace(".", ",") +
+                    "</p>" +
+
+                    "<button type='button' " +
+                    "onclick='diminuir(" + i + ")'>" +
+                    "-" +
+                    "</button> " +
+
+                    "<button type='button' " +
+                    "onclick='aumentar(" + i + ")'>" +
+                    "+" +
+                    "</button> " +
+
+                    "<button type='button' " +
+                    "onclick='remover(" + i + ")'>" +
+                    "REMOVER" +
+                    "</button>" +
+
+                "</div>";
+        }
+
+
+        /* ADICIONA A TAXA DE ENTREGA */
+
+        total = total + taxaEntrega;
+
+
+        document.getElementById("total").innerHTML =
+            total.toFixed(2).replace(".", ",");
+    }
+
+
+    /* =========================================
+       AUMENTAR QUANTIDADE
+       ========================================= */
+
+    function aumentar(posicao) {
+
+        quantidades[posicao]++;
+
+        mostrarCarrinho();
+    }
+
+
+    /* =========================================
+       DIMINUIR QUANTIDADE
+       ========================================= */
+
+    function diminuir(posicao) {
+
+        quantidades[posicao]--;
+
+
+        if (quantidades[posicao] <= 0) {
+
+            produtos.splice(posicao, 1);
+
+            quantidades.splice(posicao, 1);
+
+            precos.splice(posicao, 1);
+        }
+
+
+        mostrarCarrinho();
+    }
+
+
+    /* =========================================
+       REMOVER PRODUTO
+       ========================================= */
+
+    function remover(posicao) {
+
+        produtos.splice(posicao, 1);
+
+        quantidades.splice(posicao, 1);
+
+        precos.splice(posicao, 1);
+
+
+        mostrarCarrinho();
+    }
+
+
+    /* =========================================
+       ESCOLHER ENTREGA OU RETIRADA
+       ========================================= */
+
+    function escolherEntrega() {
+
+        let opcao =
+            document.querySelector(
+                'input[name="tipoEntrega"]:checked'
+            );
+
+
+        let campo =
+            document.getElementById("campo-endereco");
+
+
+        let taxa =
+            document.getElementById("taxa");
+
+
+        if (opcao.value == "entrega") {
+
+            /* TAXA DE R$ 5,00 */
+
+            taxaEntrega = 5;
+
+
+            /* MOSTRA O ENDEREÇO */
+
+            campo.style.display = "block";
+
+
+            /* MOSTRA A TAXA */
+
+            taxa.innerHTML =
+                taxaEntrega
+                .toFixed(2)
+                .replace(".", ",");
+
+        } else {
+
+            /* RETIRADA NÃO TEM TAXA */
+
+            taxaEntrega = 0;
+
+
+            /* ESCONDE O ENDEREÇO */
+
+            campo.style.display = "none";
+
+
+            /* TAXA ZERO */
+
+            taxa.innerHTML = "0,00";
+        }
+
+
+        /* ATUALIZA O TOTAL */
+
+        mostrarCarrinho();
+    }
+
+
+    /* =========================================
+       FINALIZAR PEDIDO
+       ========================================= */
+
+    function finalizarPedido() {
+
+        let nome =
+            document.getElementById("nome").value;
+
+
+        let telefone =
+            document.getElementById("telefone").value;
+
+
+        let observacoes =
+            document.getElementById("observacoes").value;
+
+
+        let opcao =
+            document.querySelector(
+                'input[name="tipoEntrega"]:checked'
+            );
+
+
+        let endereco =
+            document.getElementById("endereco").value;
+
+
+        /* VERIFICA SE TEM PRODUTO */
+
+        if (produtos.length == 0) {
+
+            alert(
+                "Adicione pelo menos um produto ao carrinho."
+            );
+
+            return;
+        }
+
+
+        /* VERIFICA O NOME */
+
+        if (nome == "") {
+
+            alert("Digite seu nome.");
+
+            return;
+        }
+
+
+        /* VERIFICA O TELEFONE */
+
+        if (telefone == "") {
+
+            alert("Digite seu telefone.");
+
+            return;
+        }
+
+
+        /* VERIFICA ENTREGA OU RETIRADA */
+
+        if (!opcao) {
+
+            alert(
+                "Escolha entre entrega ou retirada."
+            );
+
+            return;
+        }
+
+
+        /* SE FOR ENTREGA, VERIFICA O ENDEREÇO */
+
+        if (
+            opcao.value == "entrega"
+            &&
+            endereco == ""
+        ) {
+
+            alert(
+                "Digite o endereço para entrega."
+            );
+
+            return;
+        }
+
+
+        /* =========================================
+           CRIA A MENSAGEM
+           ========================================= */
+
+        let mensagem =
+            "Olá! Gostaria de fazer um pedido na Moccaí.\n\n";
+
+
+        mensagem +=
+            "Nome: " + nome + "\n";
+
+
+        mensagem +=
+            "Telefone: " + telefone + "\n\n";
+
+
+        /* =========================================
+           FORMA DE RECEBIMENTO
+           ========================================= */
+
+        if (opcao.value == "entrega") {
+
+            mensagem +=
+                "Forma de recebimento: ENTREGA\n";
+
+
+            mensagem +=
+                "Endereço: " +
+                endereco +
+                "\n";
+
+
+            mensagem +=
+                "Taxa de entrega: R$ " +
+                taxaEntrega
+                    .toFixed(2)
+                    .replace(".", ",") +
+                "\n\n";
+
+        } else {
+
+            mensagem +=
+                "Forma de recebimento: " +
+                "RETIRADA NA CAFETERIA\n\n";
+        }
+
+
+        /* =========================================
+           PRODUTOS
+           ========================================= */
+
+        mensagem +=
+            "PEDIDO:\n";
+
+
+        let total = 0;
+
+
+        for (
+            let i = 0;
+            i < produtos.length;
+            i++
+        ) {
+
+            let subtotal =
+                precos[i] * quantidades[i];
+
+
+            total =
+                total + subtotal;
+
+
+            mensagem +=
+                produtos[i] +
+                " x" +
+                quantidades[i] +
+                " - R$ " +
+                subtotal
+                    .toFixed(2)
+                    .replace(".", ",") +
+                "\n";
+        }
+
+
+        /* =========================================
+           TAXA
+           ========================================= */
+
+        total =
+            total + taxaEntrega;
+
+
+        mensagem +=
+            "\nTaxa de entrega: R$ " +
+            taxaEntrega
+                .toFixed(2)
+                .replace(".", ",");
+
+
+        /* =========================================
+           TOTAL
+           ========================================= */
+
+        mensagem +=
+            "\nTotal: R$ " +
+            total
+                .toFixed(2)
+                .replace(".", ",");
+
+
+        /* =========================================
+           OBSERVAÇÕES
+           ========================================= */
+
+        if (observacoes != "") {
+
+            mensagem +=
+                "\n\nObservações: " +
+                observacoes;
+        }
+
+
+        /* =========================================
+           WHATSAPP
+           ========================================= */
+
+        /*
+        TROQUE PELO NÚMERO REAL DA CAFETERIA.
+
+        Exemplo:
+        5511999999999
+        */
+
+        let numero =
+            "5511999999999";
+
+
+        let link =
+            "https://wa.me/" +
+            numero +
+            "?text=" +
+            encodeURIComponent(mensagem);
+
+
+        window.open(
+            link,
+            "_blank"
+        );
+
+    }
+
+</script>
